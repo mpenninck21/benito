@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descubra o Meliante</title>
+<style>
+    *{
+        background-color: rgb(112, 112, 216);
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        text-align: center;
+
+    .first-title {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .second-title {
+        color: rgb(146, 69, 69);
+        font-size: 25px;
+    }
+    }
+    img {
+        border-radius: 50%;
+        width: 200px;
+        height: 400px;
+        width: 400px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <p class="first-title">Descubra o meliante por trás!</p>
+    <p class="second-title">Basta clicar na imagem abaixo.</p>
+    <img id="imagem" src="wl.png" alt="Meliante">
+</div>
+
+<script>
+    document.getElementById("imagem").addEventListener("click", function() {
+        this.src = "benito.png";
+    });
+</script>
+
+</body>
+</html>
